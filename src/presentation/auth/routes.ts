@@ -6,7 +6,8 @@ export class AuthRoutes {
     const router = Router();
     const controller = new AuthController();
 
-    router.post("/register", controller.register); 
+    router.post("/register", controller.register);
+    router.put("/confirm-email", controller.confirmEmail);
     return router;
   }
 }
